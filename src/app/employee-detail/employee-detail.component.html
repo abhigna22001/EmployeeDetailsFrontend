@@ -1,0 +1,26 @@
+<h2>Employee Details</h2> 
+
+<hr/>
+<div *ngIf="employee">
+  <div>
+    <label><b>Employee Id : </b></label> 
+       {{employee.emp_id}}
+  </div>
+  <div>
+    <label><b>Employee Name : </b></label> 
+      {{employee.emp_name}}
+  </div>
+  <div>
+    <label><b>Employee Role : </b></label> 
+      {{employee.emp_role}}
+  </div>
+  <div>
+    <label><b>Employee Salary : </b></label> 
+      {{employee.emp_salary}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="empList()" class="btn btn-dark">
+  go to Employee List </button><br>
